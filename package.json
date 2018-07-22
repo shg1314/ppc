@@ -1,0 +1,38 @@
+{
+  "name": "ppc",
+  "description": "PRIME PROCUREMENT CONSULTING",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": {
+    "name": "Ggon",
+    "url": "https://github.com/shg1314/ppc.git"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shg1314/ppc.git"
+  },
+  "keywords": [
+    "PROCUREMENT CONSULTING"
+  ],
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-session": "^1.13.0",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "connect-mongo": "^1.1.0",
+    "mongoose": "^4.4.5",
+    "node-sass-middleware": "0.11.0",
+    "serve-favicon": "~2.5.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "connect-flash": "~0.1.1",
+    "mysql": "~2.15.0"
+  }
+}
