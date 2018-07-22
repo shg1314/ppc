@@ -1,10 +1,12 @@
 // Database URL
 module.exports = {
    sessiondb:{ 'url' : 'mongodb://localhost/darleneJ'},
-   darleneJdb: {
+   maindb: {
        host: 'localhost',
-       user: 'test',
+       user: 'ppc',
        password: 'test',
-       database : 'darleneJ'
+       database : 'ppc',
+       connectionLimit:20,
+       waitForConnections:false
     }
 };
