@@ -83,11 +83,12 @@ img.logo{
   vertical-align: middle;
   list-style: none;
   width: 100%;
-  height: 30px;
+  height: 40px;
   background: #8D2126;
 }
 
 #menu ul li {
+  margin-top: 10px;
   vertical-align: middle;
   float: left;
   margin-right: 10px;
@@ -227,4 +228,34 @@ button.bid_list{
   outline: none;
   float: right;
   color: #ffffff;
+}
+
+/* 자체 조달시스템 바로가기 */
+
+div.bid_system{
+  /*display: inline-block;*/
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+  height: 30px;
+  width: 200px;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+select.bid_system{
+  font-size: 16px;
+  height:100%;
+  width: 100%;
+  padding: 0px 15px;
+  border: 0px;
+  outline: none;
+  float: left;
+  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+  appearance: none;         /* 화살표 없애기 공통*/
+}
+
+select.bid_system::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
 }
