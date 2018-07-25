@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title><%= title %></title>
-    <% include ../partials/stylesheet %>
-</head>
+  <% include ../partials/head.ejs %>
 
-<body>
-  <% include ../partials/javascript %>
- 
-  <% include ../partials/header.ejs %>
-  <% include ../partials/menu.ejs %>
+  <body>
+    <% include ../partials/javascript %>
+  
+    <!-- 최상단 메뉴 : 기본 메뉴 / 회원가입/ 로그인 등-->
+    <% include ../partials/menu.ejs %>
+    
+    <!-- header : 페이지 타이틀 , 통합 검색창-->
+    <% include ../partials/header.ejs %>
+
+    <hr>
 
     <div class="container">
-      <p class="lead">Welcome to <%= title %></p>
+      
+      <!-- 공고 검색창-->
+      <% include ../partials/search_bid.ejs %>
+
+      <!-- <p class="lead">Welcome to <%= title %></p> -->
+    <hr style="border-color: black;">    
     </div>
-    
-   <% include ../partials/footer.ejs %>
-</body>
+
+  <!--footer-->
+<% include ../partials/footer.ejs %>
+
+  </body>
+
 </html>

@@ -2,9 +2,16 @@
 <% include ../partials/stylesheet %>
 
 <div class="page-header">
+    <!-- <img class="logo" src ="/images/PPC_logo.png" style="height: 40px; width: 80px;" alt="logo"> -->
     <h1>
         <% if(title) {%>
         <%= title %>
         <% }%>
     </h1>
+</div>
+<div class="page-header-search">
+        <div class="search">
+                <input class="search" type="text" placeholder="검색어 입력">
+                <button class="search"> 검색</button>
+        </div>
 </div>

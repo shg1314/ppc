@@ -1,0 +1,67 @@
+<% include ../partials/stylesheet %>
+
+<div class="search_bid">
+    <div class="search_bid_content">
+        <p>맞춤 공고 검색</p>
+        
+        <!--본사 지역 검색 : 도/ 시단위 api??-->
+        <div class="left">
+            <p>본사 지역 구분1</p>
+            <div class="form">
+                <select class="location" name="location1">
+                    <option value="seoul">서울</option>
+                    <option value="gyeonggido">경기도</option>
+                    <option value="gangwondo">강원도</option>
+                </select>
+            </div> 
+        </div>
+
+        <div class="right">
+          <p>본사 지역 구분2</p>
+            <div class="form">
+                <select class="location" name="location1">
+                    <option value="seoul">성남</option>
+                    <option value="gyeonggido">수원</option>
+                    <option value="gangwondo">용인</option>
+                </select>
+            </div> 
+        </div>
+
+        <!--입찰 마감일 / datepicker 사용-->
+        <div class="left">
+            <div class="form">
+                <input class="search1" type="text" placeholder="입찰 마감일 ~부터">
+            </div> 
+        </div>
+    
+        <div class="right">
+            <div class="form">
+                    <input class="search1" type="text" placeholder=" ~까지">
+            </div> 
+        </div>
+        
+
+        <!--업종/ 공공데이터 연결, 여러개 선택 가능하도록-->
+        <div class="input_content">
+            <div class="input">
+                <input class="search1" type="text" placeholder="업종 선택">
+            </div>
+        </div>
+
+        <!--세부품명/ 공공데이터 연결, 여러개 선택 가능하도록/ 업종,세부품명 하나 혹은 둘다 선택가능, 둘중하나는 반드시 입력-->
+        <div class="input_content">
+            <div class="input">
+                <input class="search1" type="text" placeholder="세부품명 선택">
+            </div>
+        </div>
+        
+        <!--검색하기 버튼-->
+        <div class="button_bidlist_content">
+                <div class="button_bidlist">
+                    <button class="bid_list">공고문 검색하기</button>
+                </div>
+        </div>
+    
+    </div>
+
+</div>

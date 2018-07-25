@@ -7,8 +7,38 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+div.left{
+  width: 50%;
+  float: left;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.right{
+  width: 50%;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
 a {
   color: #00B7FF;
+}
+
+/* loog image tag */
+img.logo{
+  border: 0px;
+  padding-top: 0px;
+  width: 80px;
+  height: 40px;
+  /* display: inline-block; */
+  /* float: left; */
+}
+
+/*container*/
+.container {
+  margin-top: 0;
+  padding: 10px 20px 10px 20px;
 }
 
 
@@ -16,7 +46,7 @@ a {
 .page-header {
   background-color: #ffffff;
   margin-top: 0;
-  padding: 30px 20px 0px 20px;
+  padding: 50px 0px 0px 0px;
   text-align: center;
 }
 
@@ -24,6 +54,13 @@ a {
   color: #8D2126;
   font-size: 24px;
   text-decoration: none;
+}
+
+.page-header-search{
+  background-color: #ffffff;
+  margin-top: 0;
+  padding: 0px 0px 20px 0px;
+  text-align: center;
 }
 
 /* Footer */
@@ -42,6 +79,7 @@ a {
 /*menu*/
 #menu ul {
   margin-left: 0px;
+  margin-bottom: 0px;
   vertical-align: middle;
   list-style: none;
   width: 100%;
@@ -61,4 +99,132 @@ a {
   font-weight: bold;
   vertical-align: middle;
   text-decoration: none;
+}
+
+/* 헤더 검색폼 */
+
+div.search {
+  display: inline-block;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+ input.search{
+  font-size: 16px;
+  width: 325px;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+button.search{
+  width: 50px;
+  height: 100%;
+  border: 0px;
+  background: #8D2126;
+  outline: none;
+  float: right;
+  color: #ffffff;
+}
+
+/* 맞춤 공고 검색 폼 */
+
+div.search_bid {
+  /* display: inline-block; */
+  height: 100%;
+  width: 100%;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.search_bid_content{
+  padding: 15px 15px 15px 15px;
+}
+
+
+/* 지역 드롭다운 리스트 */
+
+div.form{
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+
+select.location{
+  font-size: 16px;
+  height:100%;
+  width: 100%;
+  padding: 0px 15px;
+  border: 0px;
+  outline: none;
+  float: left;
+  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+  appearance: none;         /* 화살표 없애기 공통*/
+}
+
+select.location::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
+}
+
+
+/* 업종, 세부품명 입력 */
+
+div.input_content{
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.input {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+input.search1{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+/* 맞춤 검색 보기 버튼 */
+
+div.button_bidlist_content{
+  width: 100%;
+  padding: 5px 5px 5px 0px;
+  box-sizing: border-box; 
+}
+
+div.button_bidlist {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: none;
+  background: #ffffff;
+}
+
+button.bid_list{
+  width: 150px;
+  height: 100%;
+  border: 0px;
+  background: #8D2126;
+  outline: none;
+  float: right;
+  color: #ffffff;
 }
