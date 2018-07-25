@@ -293,7 +293,7 @@ div.column4{
   float: left;
   width: 330px;
   height: 500px;
-  /*border-top: 1px solid #CACACA;*/
+  padding: 10px 10px 10px 10px;
 }
 
 div.column5{
@@ -301,4 +301,5 @@ div.column5{
   width: 330px;
   height: 500px;
   border-left: 1px solid #CACACA;
+  padding: 10px 10px 10px 10px;
 }
