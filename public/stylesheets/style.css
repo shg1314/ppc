@@ -42,6 +42,11 @@ img.logo{
   background-color: aquamarine;*/
 }
 
+#content-header {
+  overflow: auto;
+  height: 100%;
+}
+
 
 /*header*/
 .page-header {
@@ -302,4 +307,20 @@ div.column5{
   height: 500px;
   border-left: 1px solid #CACACA;
   padding: 10px 10px 10px 10px;
+}
+
+div.column6{
+  float: left;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #CACACA;
+}
+
+div.column7{
+  float: left;
+  width: 660px;
+  height: 60px;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  padding: 10px 10px 0px 10px;
 }

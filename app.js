@@ -13,7 +13,6 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views/pages'));
 app.set('view engine', 'ejs');
-//test
 
 app.use(logger('dev'));
 app.use(express.json());
