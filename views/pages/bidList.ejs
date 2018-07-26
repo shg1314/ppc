@@ -14,14 +14,55 @@
     <hr>
 
     <div id="content">
-      <div class="column1"></div>
-      <div class="column2">
-        <!-- 분석방법 안내 게시판 -->
+            <div class="column1"></div>
+            <div class="column2">
+              <!-- 공고 검색창-->
+              <% include ../partials/search_bid.ejs %>
+            </div>
+            <div class="column1"></div>
 
+      <div class="column8"></div>
+      <div class="column9">
+        <!-- 공고문 안내 게시판 -->
+        <table class="table table-striped">
+          <tr>
+            <th>번호</th>
+            <th>조달시스템</th>
+            <th>공고기관</th>
+            <th>공고번호</th>
+            <th>공고문 제목</th>
+            <th>입찰 마감일</th>
+          </tr>
+          <tr>
+              <th>1</th>
+              <th>나라장터</th>
+              <th>성남시청</th>
+              <th>001-테스트-001</th>
+              <th>테스트 임의 내용 입니다.</th>
+              <th>2018년 7월 31일 14:00</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>나라장터</th>
+              <th>성남시청</th>
+              <th>001-테스트-001</th>
+              <th>테스트 임의 내용 입니다.</th>
+              <th>2018년 7월 31일 14:00</th>
+          </tr>
+        </table>
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
       </div>
-      <div class="column1"></div>
+    <div class="column8"></div>
      
-    </div>
+  </div>
 
   <!--footer-->
     <footer>

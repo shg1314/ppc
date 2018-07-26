@@ -324,3 +324,22 @@ div.column7{
   border-bottom: 1px solid #CACACA;
   padding: 10px 10px 0px 10px;
 }
+
+div.column8{
+  float:left;
+  width: 150px;
+  height: 400px;
+  border-left: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
+}
+
+div.column9{
+  float: left;
+  width: 660px;
+  height: 400px;
+}
+
+/* 테이블 디자인 */
+div table {
+  font-size: 10px;
+}
