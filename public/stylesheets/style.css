@@ -85,7 +85,7 @@ img.logo{
   font-size: 11px;
 }
 
-/*menu*/
+/*메뉴*/
 #menu ul {
   margin-left: 0px;
   margin-bottom: 0px;
@@ -343,3 +343,170 @@ div.column9{
 div table {
   font-size: 10px;
 }
+
+/*문의 폼 디자인*/
+
+div.column_enquiry1{
+  float:left;
+  width: 150px;
+  height: 800px;
+  border: 1px solid #CACACA;
+}
+
+div.column_enquiry2{
+  float: left;
+  width: 660px;
+  height: 100%;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  margin-bottom: 0px;
+  /*border: 1px solid #CACACA;*/
+}
+
+div.enquiry {
+  /* display: inline-block; */
+  height: 100%;
+  width: 660px;
+  /*border: 1px solid #CACACA;*/
+  background: #ffffff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+div.enquiry_content{
+  padding: 15px 15px 15px 15px;
+}
+
+div.left_enquiry{
+  width: 70%;
+  float: left;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.right_enquiry{
+  width: 30%;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+ /*텍스트 입력_문의란*/
+div.input_enquiry{
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.input_enquiry_1 {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+input.enquiry{
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+/* 체크박스 디자인 */
+
+div.column_check1{
+  float: left;
+  width: 30%;
+  height: 30px;
+  /*border: 1px solid #CACACA;*/
+}
+div.column_check2{
+  float: left;
+  width: 40%;
+  height: 30px;
+  /*border: 1px solid #CACACA;*/
+}
+
+.check{
+  display:block; 
+  position:relative; 
+  margin-bottom:12px; 
+  padding-left:25px; 
+  font-size:15px; 
+  cursor:pointer; 
+  user-select:none;
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select:none;
+}
+.check input{
+  position:absolute;
+  opacity:0;
+  cursor:pointer;
+}
+.checkmark{
+  position:absolute;
+  top:0; 
+  left:0px; 
+  width:20px; 
+  height:20px; 
+  background-color:#fff; 
+  border:1px solid #8D2126;
+}
+.check:hover input ~ .checkmark{
+  background-color:#ccc;
+}
+.check input:checked ~ .checkmark{
+  background-color:#8D2126;
+}
+.checkmark:after{
+  display:none; 
+  position:absolute; 
+  content:"";
+}
+.check input:checked ~ .checkmark:after{
+  display:block;
+}
+.check .checkmark:after{
+  top:2px; 
+  left:7px; 
+  width:5px; 
+  height:10px; 
+  border:solid white; 
+  border-width:0 3px 3px 0; 
+  transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+}
+
+/* 참고사항 텍스트 에어리어 */
+div.input_enquiry{
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.text_enquiry {
+  display: inline-block;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #8D2126;
+  background: #ffffff;
+}
+
+textarea.enquiry{
+  font-size: 16px;
+  resize: none;
+  width: 100%;
+  height: 190px;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
