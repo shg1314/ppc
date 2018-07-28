@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
 var logger = require('morgan');
 
 //var indexRouter = require('./routes/index');
@@ -13,7 +14,6 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views/pages'));
 app.set('view engine', 'ejs');
-//test
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -40,6 +40,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+ //bodyParser
+ app.use(bodyParser.urlencoded({extended: false}));
+ app.use(bodyParser.json())
+
 module.exports = app;
 
 app.set('port', process.env.PORT || 3000);
@@ -48,4 +52,11 @@ var server = app.listen(app.get('port'), function() {
 });
 
 
-  //image page
+app.get('/', (req, res) => {
+  res.render('form');
+});
+app.post('/mailerEnquiry', (req, res) => {
+  console.log(req.body);
+  res.json(req.body);
+});
+

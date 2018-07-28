@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <% include ../partials/javascript %>
+    <head>
+        <% include ../partials/head.ejs %>
+    </head>
+
+    <!-- 최상단 메뉴 : 기본 메뉴 / 회원가입/ 로그인 등-->
+    <% include ../partials/menu.ejs %>
+    <!-- header : 페이지 타이틀 , 통합 검색창-->
+    <% include ../partials/header_sub.ejs %>
+
+    <hr>
+
+    <div id="content">
+      <div class="column_enquiry1">
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#">문의하기</a></li>
+              <li class="list-group-item"><a href="#">서비스 소개</a></li>
+              <li class="list-group-item"><a href="#">자주 묻는 질문</a></li>
+              <li class="list-group-item"><a href="#">제휴문의</a></li>
+          </ul>
+      </div>
+      <div class="column_enquiry2">
+        <!-- 문의 폼 -->
+        <% include ../partials/enquiry.ejs %>
+      </div>
+      <div class="column_enquiry1"></div>
+     
+    </div>
+
+  <!--footer-->
+    <footer>
+        <% include ../partials/footer.ejs %> 
+    </footer>
+
+    </body>
+
+</html>

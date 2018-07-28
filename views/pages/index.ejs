@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title><%= title %></title>
-    <% include ../partials/stylesheet %>
-</head>
-
-<body>
-  <% include ../partials/javascript %>
- 
-  <% include ../partials/header.ejs %>
-  <% include ../partials/menu.ejs %>
-
-    <div class="container">
-      <p class="lead">Welcome to <%= title %></p>
-    </div>
+  <% include ../partials/head.ejs %>
+  <body>
+    <% include ../partials/javascript %>
+  
+    <!-- 최상단 메뉴 : 기본 메뉴 / 회원가입/ 로그인 등-->
+    <% include ../partials/menu.ejs %>
     
-   <% include ../partials/footer.ejs %>
-</body>
+    <!-- header : 페이지 타이틀 , 통합 검색창-->
+    <% include ../partials/header.ejs %>
+
+    <hr>
+
+    <div id="content">
+      <div class="column1"></div>
+      <div class="column2">
+        <!-- 공고 검색창-->
+        <% include ../partials/search_bid.ejs %>
+      </div>
+      <div class="column1"></div>
+
+      <!--Column-->
+      <div class="column3"></div>
+      <div class="column4">
+        조달시스템별 공지사항 업뎃 목록
+      </div>
+      <div class="column5">
+        압찰 분석 방법 안내
+      </div>
+      <div class="column3"></div>
+     
+    </div>
+
+  <!--footer-->
+  <footer>
+    <% include ../partials/footer.ejs %> 
+  </footer>
+  
+  </body>
+
 </html>
