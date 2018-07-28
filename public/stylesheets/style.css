@@ -1,6 +1,7 @@
 body {
   width: 960px;
   margin: 0 auto;
+  /*border: solid 1px #cacaca;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -266,7 +267,7 @@ button.search{
 div.search_bid {
   /* display: inline-block; */
   height: 100%;
-  width: 660px;
+  width: 650px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -276,7 +277,7 @@ div.search_bid {
 }
 
 div.search_bid_content{
-  padding: 15px 15px 15px 15px;
+  padding: 20px 20px 20px 20px;
 }
 
 
@@ -472,16 +473,16 @@ div table {
 div.column_enquiry1{
   float:left;
   width: 150px;
-  height: 800px;
-  border: 1px solid #CACACA;
+  height: 100%;
+  /*border: 1px solid #CACACA;*/
 }
 
 div.column_enquiry2{
   float: left;
   width: 660px;
   height: 100%;
-  border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
+  border-left: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
   margin-bottom: 0px;
   /*border: 1px solid #CACACA;*/
 }
@@ -489,7 +490,7 @@ div.column_enquiry2{
 div.enquiry {
   /* display: inline-block; */
   height: 100%;
-  width: 660px;
+  width: 655px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -499,7 +500,7 @@ div.enquiry {
 }
 
 div.enquiry_content{
-  padding: 15px 15px 15px 15px;
+  padding: 15px 20px 15px 20px;
 }
 
 div.left_enquiry{
@@ -650,6 +651,41 @@ div.service h1 {
 }
 
 div.service h2 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+div.service1 {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+  background-image: url('/images/arrow_bg.png');
+}
+
+div.service1 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.service1_content {
+  width: 100%;
+  height: 450px;
+  padding: 50px 100px 50px 100px;
+}
+
+div.service1_content h1 {
+  color: rgb(23, 59, 136);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.service1_content h2 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   text-decoration: none;
