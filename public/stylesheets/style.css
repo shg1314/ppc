@@ -1,6 +1,7 @@
 body {
   width: 960px;
   margin: 0 auto;
+  /*border: solid 1px #cacaca;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -19,10 +20,103 @@ div.right{
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(43, 44, 44);
 }
 
-/* loog image tag */
+/* 문의 사항 폼 */
+div.contact_main{
+  width: 960px;
+  height: 180px;
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+}
+
+div.contact_main1{
+  height: 30px;
+}
+
+div.contact_main h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.contact_main h2 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+div.left_contact{
+  width: 50%;
+  height: 200px;;
+  text-align: center;
+  float: left;
+  padding: 30px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+div.left_contact h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.left_contact h2 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+div.right_contact{
+  width: 50%;
+  height: 200px;;
+  text-align: center;
+  display: inline-block;
+  padding: 30px 5px 5px 5px;
+  box-sizing: border-box;
+  border-left: 1px solid rgb(0, 0, 0);
+}
+
+div.right_contact h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+div.right_contact h2 {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* 문의 바로가기 버튼 */
+
+.button_enquiry {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 760px;
+  clear: both;
+  line-height: 1.8;
+}
+
+.button_enquiry a {
+  background:#8D2126;
+  border: 1px solid #8D2126;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 100px; 
+  font-size: 16px;
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+
+/* logo image tag */
 img.logo{
   border: 0px;
   padding-top: 0px;
@@ -58,7 +152,7 @@ img.logo{
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
   color: #8D2126;
-  font-size: 24px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -70,6 +164,34 @@ img.logo{
 }
 
 /* Footer */
+
+.page-footer-link ul {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  list-style: none;
+  width: 100%;
+  height: 40px;
+  background: #ededed;
+}
+
+.page-footer-link ul li {
+  margin-top: 10px;
+  float: right;
+  margin-right: 30px;
+}
+
+.page-footer-link ul li a {
+  font-size: 12px;
+  text-align: center;
+  color: rgb(36, 34, 34);
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+
 .page-footer {
   position: relative;
   bottom: 0;
@@ -100,7 +222,7 @@ img.logo{
   margin-top: 10px;
   vertical-align: middle;
   float: left;
-  margin-right: 10px;
+  margin-right: 30px;
 }
 
 #menu ul li a {
@@ -145,7 +267,7 @@ button.search{
 div.search_bid {
   /* display: inline-block; */
   height: 100%;
-  width: 660px;
+  width: 650px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -155,7 +277,7 @@ div.search_bid {
 }
 
 div.search_bid_content{
-  padding: 15px 15px 15px 15px;
+  padding: 20px 20px 20px 20px;
 }
 
 
@@ -313,16 +435,18 @@ div.column6{
   float: left;
   width: 150px;
   height: 60px;
-  border: 1px solid #CACACA;
+  border: 0px solid #CACACA;
+  padding: 10px 15px 0px 10px;
+  text-align: right;
 }
 
 div.column7{
   float: left;
   width: 660px;
   height: 60px;
-  border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
-  padding: 10px 10px 0px 10px;
+  border-top: 0px solid #CACACA;
+  border-bottom: 0px solid #CACACA;
+  padding: 18px 0px 0px 10px;
 }
 
 div.column8{
@@ -349,16 +473,16 @@ div table {
 div.column_enquiry1{
   float:left;
   width: 150px;
-  height: 800px;
-  border: 1px solid #CACACA;
+  height: 100%;
+  /*border: 1px solid #CACACA;*/
 }
 
 div.column_enquiry2{
   float: left;
   width: 660px;
   height: 100%;
-  border-top: 1px solid #CACACA;
-  border-bottom: 1px solid #CACACA;
+  border-left: 1px solid #CACACA;
+  border-right: 1px solid #CACACA;
   margin-bottom: 0px;
   /*border: 1px solid #CACACA;*/
 }
@@ -366,7 +490,7 @@ div.column_enquiry2{
 div.enquiry {
   /* display: inline-block; */
   height: 100%;
-  width: 660px;
+  width: 655px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -376,7 +500,7 @@ div.enquiry {
 }
 
 div.enquiry_content{
-  padding: 15px 15px 15px 15px;
+  padding: 15px 20px 15px 20px;
 }
 
 div.left_enquiry{
@@ -510,3 +634,59 @@ textarea.enquiry{
   float: left;
 }
 
+/*서비스*/
+div.service {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 0px;
+}
+
+div.service h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.service h2 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+div.service1 {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+  background-image: url('/images/arrow_bg.png');
+}
+
+div.service1 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.service1_content {
+  width: 100%;
+  height: 450px;
+  padding: 50px 100px 50px 100px;
+}
+
+div.service1_content h1 {
+  color: rgb(23, 59, 136);
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+div.service1_content h2 {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  text-decoration: none;
+}

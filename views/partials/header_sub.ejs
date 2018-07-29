@@ -1,13 +1,14 @@
 <% include ../partials/stylesheet %>
     <body>
         <div id="content-header">
-            <div class="column6">
+            <div class="column6" oncontextmenu="return false" ondragstart="return false" onselect='return false'>
+                <a href="/"><img class="logo" src ="/images/ppc_logo.jpg" style="height: 55px; width: 130px;" alt="logo"></a>
             </div>
             <div class="column7">
-                    <div class="search">
-                            <input class="search" type="text" placeholder="검색어 입력">
-                            <button class="search"> 검색</button>
-                    </div>
+                <div class="search">
+                    <input class="search" type="text" placeholder="검색어 입력">
+                    <button class="search"> 검색</button>
+                </div>
             </div>
             <div class="column6"></div>
         </div>

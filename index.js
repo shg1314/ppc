@@ -27,6 +27,21 @@ router.get('/csCenter', function(req, res, next) {
   res.render('csCenter', { title: 'Prime Procurement' });
 });
 
+/*GET service page.*/
+router.get('/service', function(req, res, next) {
+  res.render('service', { title: 'Prime Procurement' });
+});
+
+/*GET QnA page.*/
+router.get('/qna', function(req, res, next) {
+  res.render('qna', { title: 'Prime Procurement' });
+});
+
+/*GET partner page.*/
+router.get('/partner', function(req, res, next) {
+  res.render('partner', { title: 'Prime Procurement' });
+});
+
 
 /* 메일전송 _ 문의란 */
 
