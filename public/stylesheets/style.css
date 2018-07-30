@@ -433,8 +433,8 @@ div.column5{
 
 div.column6{
   float: left;
-  width: 150px;
-  height: 60px;
+  width: 30%;
+  height: 70px;
   border: 0px solid #CACACA;
   padding: 10px 15px 0px 10px;
   text-align: right;
@@ -442,8 +442,8 @@ div.column6{
 
 div.column7{
   float: left;
-  width: 660px;
-  height: 60px;
+  width: 70%;
+  height: 70px;
   border-top: 0px solid #CACACA;
   border-bottom: 0px solid #CACACA;
   padding: 18px 0px 0px 10px;
@@ -459,7 +459,7 @@ div.column8{
 
 div.column9{
   float: left;
-  width: 660px;
+  width: 600px;
   height: 400px;
 }
 
@@ -467,6 +467,7 @@ div.column9{
 div table {
   font-size: 10px;
 }
+
 
 /*문의 폼 디자인*/
 
@@ -490,7 +491,7 @@ div.column_enquiry2{
 div.enquiry {
   /* display: inline-block; */
   height: 100%;
-  width: 655px;
+  width: 600px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -500,7 +501,10 @@ div.enquiry {
 }
 
 div.enquiry_content{
-  padding: 15px 20px 15px 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 0px;
 }
 
 div.left_enquiry{
@@ -545,13 +549,19 @@ input.enquiry{
 
 div.column_check1{
   float: left;
-  width: 30%;
+  width: 24%;
   height: 30px;
   /*border: 1px solid #CACACA;*/
 }
 div.column_check2{
   float: left;
-  width: 40%;
+  width: 24%;
+  height: 30px;
+  /*border: 1px solid #CACACA;*/
+}
+div.column_check3{
+  float: left;
+  width: 14%;
   height: 30px;
   /*border: 1px solid #CACACA;*/
 }
@@ -689,4 +699,18 @@ div.service1_content h2 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   text-decoration: none;
+}
+
+div.service2 {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px 20px 0px;;
+  margin-bottom: 0px;
+}
+
+div.service2 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
 }
