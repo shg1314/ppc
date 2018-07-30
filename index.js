@@ -43,16 +43,18 @@ router.get('/partner', function(req, res, next) {
 });
 
 
-/* 메일전송 _ 문의란 */
+/* 메일전송_분석 서비스 문의 : service.ejs */
 
 router.post("/mailerEnquiry",function(req, res, next) {
-  let email = 'csi@ppckorea.com';
-  var company = req.body.company1;
+  var email = 'csi@ppckorea.com';
+  var company1 = req.body.company1;
   var name = req.body.name;
   var contact_title = req.body.contact_title;
   var contact_email = req.body.email1;
   var phone = req.body.phone;
-  var content =`company: ${company} \n name: ${name} \n`;
+  var enquiry_area = req.body.enquiry_area;
+  var enquiry_textarea = req.body.enquiry_textarea;
+  var content =`회사: ${company1} \n 직함: ${contact_title} \n 담당자: ${name}  \n 이메일 ${contact_email}  \n 전화번호: ${phone} \n 관심분야: ${enquiry_area}  \n 문의 상세내용: ${enquiry_textarea}}`;
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -66,7 +68,7 @@ router.post("/mailerEnquiry",function(req, res, next) {
     from: 'kissthetour.andy@gmail.com',
     to: email ,
     subject: '프라임조달컨설팅 홈피의 이메일 문의입니다.',
-    text: 'ㅇㄹㅇㄹㄴ'
+    text: content
   };
 
   transporter.sendMail(mailOptions, function(error, info){
@@ -77,9 +79,7 @@ router.post("/mailerEnquiry",function(req, res, next) {
     }
   });
   
-  res.redirect("/");
+  res.redirect("/service");
 })
-
-
 
 module.exports = router;

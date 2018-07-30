@@ -5,11 +5,11 @@
         <h1>분석 서비스 온라인 문의</h1>
         <br>
         <form action="/mailerEnquiry" method="POST">
-
+            
         <!-- 회사명-->
         <div class="input_enquiry">
                 <div class="input_enquiry_1">
-                    <input class="enquiry" type="text" id="company" placeholder="회사명">
+                    <input class="enquiry" id="company1" name="company1" type="text" placeholder="회사명"  onkeypress="if(event.keyCode==13){return false;}">
                 </div>
         </div>
 
@@ -17,35 +17,36 @@
         <!--담당자-->
         <div class="left_enquiry">
             <div class="form">
-                <input class="enquiry" type="text" id="name" placeholder="담당자 성함">
+                <input class="enquiry" id="name" name="name" type="text" placeholder="담당자 성함"  onkeypress="if(event.keyCode==13){return false;}">
+
             </div> 
         </div>
         <div class="right_enquiry">
             <div class="form">
-                    <input class="enquiry" type="text" id="contact_title" placeholder="직함">
+                <input class="enquiry" id="contact_title" name="contact_title" type="text"  placeholder="직함" onkeypress="if(event.keyCode==13){return false;}">
             </div> 
         </div>
         
         <!-- 연락처 -->
         <div class="left">
             <div class="input_enquiry_1">
-                    <input class="enquiry" type="email" id="email1" placeholder="이메일주소">
+                <input class="enquiry" id="email1" name="email1" type="email" placeholder="이메일주소" onkeypress="if(event.keyCode==13){return false;}">
             </div>
         </div>
         <div class="right">
             <div class="input_enquiry_1">
-                <input class="enquiry" type="text" id="phone" placeholder="전화번호">
-            </div>  
+                <input class="enquiry" id="phone" name="phone" type="tel" placeholder="전화번호" onkeypress="if(event.keyCode==13){return false;}">
+             </div>  
         </div>
 
         <hr>
 
-        <!-- 관심 분야 체크박스-->
+        관심 분야 체크박스
         <div class="input_enquiry">
             <P>관심분야</P>
             <div class="column_check1">
                 <label class="check">입찰참가자격
-                    <input type="checkbox">
+                    <input name="enquiry_area"  type="checkbox" value="입찰참가자격">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -53,7 +54,7 @@
             </div>
             <div class="column_check1">
                 <label class="check">공고문 추천/분석
-                    <input type="checkbox">
+                    <input name="enquiry_area"  type="checkbox" value="공고문 추천/분석">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -61,13 +62,13 @@
             </div>
             <div class="column_check1">
                 <label class="check">투찰가 분석
-                    <input type="checkbox">
+                    <input name="enquiry_area"  type="checkbox" value="투찰가 분석" >
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div class="column_check1">
                 <label class="check">적격심사 분석
-                    <input type="checkbox">
+                    <input name="enquiry_area" type="checkbox" value="적격심사 분석">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -75,7 +76,7 @@
             </div>
             <div class="column_check1">
                 <label class="check">다수공급자계약
-                    <input type="checkbox">
+                    <input name="enquiry_area" type="checkbox" value="다수공급자계약">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -83,7 +84,7 @@
             </div>
             <div class="column_check1">
                 <label class="check">기타 문의
-                    <input type="checkbox">
+                    <input name="enquiry_area" type="checkbox" value="기타 문의">
                     <span class="checkmark"></span>
                 </label>
             </div>
@@ -92,7 +93,8 @@
             <div class="input_enquiry">
                 <p>참고사항</p>
                 <div class="text_enquiry">
-                    <textarea class="enquiry" id="textarea" placeholder="상담을 위해 저희가 참고하여야할 사항을 자유롭게 작성바랍니다."></textarea>
+                    <textarea class="enquiry" id="enquiry_textarea" name="enquiry_textarea" placeholder="상담을 위해 저희가 참고하여야할 사항을 자유롭게 작성바랍니다."></textarea>
+                    <input type="text" style="display: none;" />
                 </div>
             </div>
 
