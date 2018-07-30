@@ -4,6 +4,8 @@
     <div class="enquiry_content">
         <h1>분석 서비스 온라인 문의</h1>
         <br>
+        <h2>저희는 고객에게 신속하고 정확한 조달 정보를 드리는데 항상 노력하고 있습니다. 조달업무와 관련하여 여러분이 계획하거나 궁금한점을 문의바랍니다.</h2>
+        <br>
         <form action="/mailerEnquiry" method="POST">
             
         <!-- 회사명-->
@@ -13,7 +15,6 @@
                 </div>
         </div>
 
-        <hr>
         <!--담당자-->
         <div class="left_enquiry">
             <div class="form">
@@ -41,9 +42,9 @@
 
         <hr>
 
-        관심 분야 체크박스
+        <!--관심 분야 체크박스-->
+        <h3>문의 내용</h3>
         <div class="input_enquiry">
-            <P>관심분야</P>
             <div class="column_check1">
                 <label class="check">입찰참가자격
                     <input name="enquiry_area"  type="checkbox" value="입찰참가자격">
@@ -88,10 +89,10 @@
                     <span class="checkmark"></span>
                 </label>
             </div>
+           <hr>
         
             <!--참고사항 박스-->
-            <div class="input_enquiry">
-                <p>참고사항</p>
+            <div class="input_enquiry_textarea">
                 <div class="text_enquiry">
                     <textarea class="enquiry" id="enquiry_textarea" name="enquiry_textarea" placeholder="상담을 위해 저희가 참고하여야할 사항을 자유롭게 작성바랍니다."></textarea>
                     <input type="text" style="display: none;" />
