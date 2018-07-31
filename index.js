@@ -47,6 +47,12 @@ router.get('/partner_enquiry', function(req, res, next) {
   res.render('partner_enquiry', { title: 'Prime Procurement' });
 });
 
+/*GET partner enquiry Success popup.*/
+router.get('/partner_enquirySuccess', function(req, res, next) {
+  res.render('partner_enquirySuccess', { title: 'Prime Procurement' });
+});
+
+
 /* 메일전송_분석 서비스 문의 : service.ejs */
 
 router.post("/mailerEnquiry",function(req, res, next) {
@@ -118,11 +124,10 @@ router.post("/partnerEnquiry",function(req, res, next) {
       return console.log(error);
     } else {
       consol.log('Email sent:'+ info.response);
-      self.close();
     }
   });
   
-  /*res.redirect("/service");*/
+  res.redirect("/partner_enquirySuccess");
 })
 
 module.exports = router;
