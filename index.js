@@ -42,6 +42,10 @@ router.get('/partner', function(req, res, next) {
   res.render('partner', { title: 'Prime Procurement' });
 });
 
+/*GET partner enquiry popup.*/
+router.get('/partner_enquiry', function(req, res, next) {
+  res.render('partner_enquiry', { title: 'Prime Procurement' });
+});
 
 /* 메일전송_분석 서비스 문의 : service.ejs */
 
@@ -80,6 +84,45 @@ router.post("/mailerEnquiry",function(req, res, next) {
   });
   
   res.redirect("/service");
+})
+
+/*문의하기 팝업창 :partner_enquiry.ejs*/
+
+router.post("/partnerEnquiry",function(req, res, next) {
+  var email = 'csi@ppckorea.com';
+  var partner_select = req.body.partner_select;
+  var partner_name = req.body.partner_name;
+  var partner_email = req.body.partner_email;
+  var partner_phone = req.body.partner_phone;
+  var partner_title = req.body.partner_title;
+  var partner_textarea = req.body.partner_textarea;
+  var content =`구분: ${partner_select} \n 작성자: ${partner_name} \n 연락처: ${partner_phone}  \n 이메일 ${partner_email}  \n 제목: ${partner_title} \n 내용: ${partner_textarea}`;
+
+  let transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'kissthetour.andy@gmail.com',
+      pass: 'andy0501'
+    }
+  });
+
+  var mailOptions = {
+    from: 'kissthetour.andy@gmail.com',
+    to: email ,
+    subject: '프라임조달컨설팅 홈피의 사업 제휴 문의입니다.',
+    text: content
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if(error) {
+      return console.log(error);
+    } else {
+      consol.log('Email sent:'+ info.response);
+      self.close();
+    }
+  });
+  
+  /*res.redirect("/service");*/
 })
 
 module.exports = router;
