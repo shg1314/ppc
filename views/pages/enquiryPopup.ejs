@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>분석 서비스 문의</title>
+        <% include ../partials/stylesheet %>
+        <% include ../partials/javascript %>
+    </head>
+    <body>
+        <form name="partner_enquiry" action="/mailerEnquiry" method="POST">
+            <div class="partner_enquiry">
+                <h1>프라임 분석 서비스 온라인 문의</h1>
+                <hr style="border: solid 2px #8D2126">
+                <table class="partner">
+                    <tr>
+                        <th>회사명</th>
+                        <td colspan="2">
+                            <div class="input_enquiry_popup">
+                                <div class="input_enquiry_popup_1">
+                                    <input class="enquiry_popup" id="company1" name="company1" type="text" placeholder=""  onkeypress="if(event.keyCode==13){return false;}">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>담당자</th>
+                        <td>
+                            <div class="input_enquiry_popup">
+                                    <div class="input_enquiry_popup_1">
+                                        <input class="enquiry_popup" id="contact_title" name="contact_title" type="text" placeholder="직함"  onkeypress="if(event.keyCode==13){return false;}">
+                                    </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input_enquiry_popup">
+                                    <div class="input_enquiry_popup_1">
+                                        <input class="enquiry_popup" id="name" name="name" type="text" placeholder="성함"  onkeypress="if(event.keyCode==13){return false;}">
+                                    </div>
+                                </div>
+                            </td>
+                    </tr>
+                    <tr>
+                        <th>연락처</th>
+                        <td colspan="2">
+                            <div class="input_enquiry_popup">
+                                    <div class="input_enquiry_popup_1">
+                                        <input class="enquiry_popup" id="partner_phone" name="phone" type="tel" placeholder=""  onkeypress="if(event.keyCode==13){return false;}">
+                                    </div>
+                            </div>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td colspan="2">
+                            <div class="input_enquiry_popup">
+                                    <div class="input_enquiry_popup_1">
+                                        <input class="enquiry_popup" id="email1" name="email1" type="email" placeholder=""  onkeypress="if(event.keyCode==13){return false;}">
+                                    </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>관심분야</th>
+                        <td colspan="2">
+                            <div class="input_enquiry">
+                                <div class="column_check1">
+                                    <label class="check">입찰참가자격
+                                        <input name="enquiry_area"  type="checkbox" value="입찰참가자격">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="column_check2">
+                                    <label class="check">공고문 추천/분석
+                                        <input name="enquiry_area"  type="checkbox" value="공고문 추천/분석">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="column_check1">
+                                    <label class="check">투찰가 분석
+                                        <input name="enquiry_area"  type="checkbox" value="투찰가 분석" >
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="column_check1">
+                                    <label class="check">적격심사 분석
+                                        <input name="enquiry_area" type="checkbox" value="적격심사 분석">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+
+                                <div class="column_check2">
+                                    <label class="check">다수공급자계약
+                                        <input name="enquiry_area" type="checkbox" value="다수공급자계약">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+ 
+                                <div class="column_check1">
+                                    <label class="check">기타 문의
+                                        <input name="enquiry_area" type="checkbox" value="기타 문의">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr colspan>
+                        <th>
+                            내용
+                        </th>
+                        <td colspan="2">
+                            <div class="input_partner_textarea">
+                                <div class="partner_textarea">
+                                   <textarea class="partner" id="enquiry_textarea" name="enquiry_textarea" placeholder=""></textarea>
+                                    <input type="text" style="display: none;" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <!--개인 정보 약관 동의-->
+                <div class="partner_enquiry_agreement">
+                    <p style="font-weight: bold;">개인정보 수집 및 동의 안내<p>
+                    <p>- 수집하는 개인정보의 항목 : 작성자명, 연락처, 메일<br>
+                    - 개인정보 수집, 이용목적 : 제휴 신청 및 문의 접수 처리<br>
+                    - 개인정보 보유, 이용기간 : 개인정보수집의 이용목적이 달성된 후 즉시 파기<br>
+                    - 관계 법령의 규정에 의해 보존할 필요성이 있는 경우 일정기간 개인정보를 보관할 수 있습니다.</p>
+                    <input name="req" type="checkbox"> 위 약관에 동의합니다.<br> 
+                </div>
+                <!--문의 취소 버튼-->
+                <div class="partner_popup_button_1">
+                    <div class="button_partner_enquiry">
+                        <button class="partner_enquiry1" onclick="self.close();">취소</button>
+                    </div>
+                </div>
+                <!--문의 전송 버튼-->  
+                <div class="partner_popup_button_2">
+                    <div class="button_partner_enquiry">
+                        <button class="partner_enquiry2" onclick="chk()" style="cursor:hand">확인</button>
+                    </div>
+                </div>     
+            </div>
+        </form>
+    </body>
+</html>

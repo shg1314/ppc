@@ -52,8 +52,17 @@ router.get('/partner_enquirySuccess', function(req, res, next) {
   res.render('partner_enquirySuccess', { title: 'Prime Procurement' });
 });
 
+/*GET enquiry popup.*/
+router.get('/enquiryPopup', function(req, res, next) {
+  res.render('enquiryPopup', { title: 'Prime Procurement' });
+});
 
-/* 메일전송_분석 서비스 문의 : service.ejs */
+/*GET enquiry Success popup*/
+router.get('/enquiryPopupSuccess', function(req, res, next) {
+  res.render('enquiryPopupSuccess', { title: 'Prime Procurement' });
+});
+
+/* 분석 서비스 팝업창 문의 : service.ejs */
 
 router.post("/mailerEnquiry",function(req, res, next) {
   var email = 'csi@ppckorea.com';
@@ -64,7 +73,7 @@ router.post("/mailerEnquiry",function(req, res, next) {
   var phone = req.body.phone;
   var enquiry_area = req.body.enquiry_area;
   var enquiry_textarea = req.body.enquiry_textarea;
-  var content =`회사: ${company1} \n 직함: ${contact_title} \n 담당자: ${name}  \n 이메일 ${contact_email}  \n 전화번호: ${phone} \n 관심분야: ${enquiry_area}  \n 문의 상세내용: ${enquiry_textarea}}`;
+  var content =`회사: ${company1} \n 직함: ${contact_title} \n 담당자: ${name}  \n 이메일 ${contact_email}  \n 전화번호: ${phone} \n 관심분야: ${enquiry_area}  \n 문의 상세내용: ${enquiry_textarea}`;
 
   let transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -89,10 +98,10 @@ router.post("/mailerEnquiry",function(req, res, next) {
     }
   });
   
-  res.redirect("/service");
+  res.redirect("/enquiryPopupSuccess");
 })
 
-/*문의하기 팝업창 :partner_enquiry.ejs*/
+/*제휴 문의하기 팝업창 :partner_enquiry.ejs*/
 
 router.post("/partnerEnquiry",function(req, res, next) {
   var email = 'csi@ppckorea.com';

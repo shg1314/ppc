@@ -2,10 +2,17 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js'></script>
 
+<!--분석서비스 문의 팝업창 열기-->
+<script language="javascript">
+        function showPopupEnquiry() { window.open("/enquiryPopup", "a", "width=600, height=600, resizable=no ,left=100, top=50"); }
+    </script>
+    
+
 <!--제휴하기 팝업창 열기-->
 <script language="javascript">
     function showPopup() { window.open("/partner_enquiry", "a", "width=600, height=600, resizable=no ,left=100, top=50"); }
 </script>
+
 
 <!--팝업창 동의하기 체크박스-->
 <SCRIPT LANGUAGE="JavaScript">
@@ -19,7 +26,6 @@
 
         if(num==1){
             document.partner_enquiry.submit();
-            alert("담당자가 문의사항을 접수후 빠른시일 안에 연락드리겠습니다. 감사합니다.")
         }else{
             alert("개인정보 수집 약관에 동의해주세요");
             return false;

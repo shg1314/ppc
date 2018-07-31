@@ -567,13 +567,13 @@ input.enquiry{
 
 div.column_check1{
   float: left;
-  width: 24%;
+  width: 30%;
   height: 30px;
   /*border: 1px solid #CACACA;*/
 }
 div.column_check2{
   float: left;
-  width: 24%;
+  width: 40%;
   height: 30px;
   /*border: 1px solid #CACACA;*/
 }
@@ -589,7 +589,7 @@ div.column_check3{
   position:relative; 
   margin-bottom:12px; 
   padding-left:25px; 
-  font-size:15px; 
+  font-size:13px; 
   cursor:pointer; 
   user-select:none;
   -webkit-user-select:none; 
