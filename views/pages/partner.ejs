@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <% include ../partials/javascript %>
     <head>
         <% include ../partials/head.ejs %>
     </head>
@@ -16,15 +15,44 @@
     <div id="content">
       <div class="column_enquiry1">
           <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="/csCenter">문의하기</a></li>
-              <li class="list-group-item"><a href="/service">서비스 소개</a></li>
+              <!--<li class="list-group-item"><a href="/csCenter">문의하기</a></li>-->
+              <li class="list-group-item"><a href="/service">프라임 분석 서비스</a></li>
               <li class="list-group-item"><a href="/qna">자주 묻는 질문</a></li>
               <li class="list-group-item"><a href="/partner">제휴문의</a></li>
           </ul>
       </div>
       <div class="column_enquiry2">
-        <!-- 문의 폼 -->
-        <% include ../partials/enquiry.ejs %>
+
+    <!-- 제휴 문의 -->
+        <div class="service" oncontextmenu="return false" ondragstart="return false" onselect='return false'>
+            <h1>사업 및 광고 제휴 문의</h1>
+            <br>
+            <h2>얀 13조 규모의 조달시장에서 프라임조달컨설팅과 함께 하실 비즈니스 협력 문의를 항상 기다리고 있습니다. 
+                귀사의 규모와 관계없이 조달시장에서 혁신적인 아이디어와 젊고 의욕적인 마인드를 함께 공유하여 성공적인 비즈니스를 영위하시기 바랍니다.</h2>
+        </div>
+
+        <div class="partner">
+
+            <table class="partner">
+                <tr>
+                    <th>사업제휴문의</th>
+                    <td>한국 조달시장의 건전한 발전과 중소기업인들의 성공적인 조달시장의 진입을 위한 정직한 정보 제공이 저희 프라임 조달 컨설팅의 비전입니다. 저희의 비전을 이해하고 함께하여 자사와 함께 비즈니스 성장을 함께 하실 여러분을 언제나 기다리고 있습니다.</td>
+                </tr>
+                <tr>
+                    <th>입찰분석제휴문의</th>
+                    <td>프라임조달컨설팅은 입찰공고 추천 서비스와 함께 입찰 공고에 대한 분석 방법을 제공합니다. 회원사가 성공적인 낙찰을 위하여 혁신적인 입찰 분석법을 함께 고민하고 연구하실 분은 개인이나 단체 등 어느분이라도 자유롭게 연락바랍니다.</td>
+                </tr>
+                <tr>
+                    <th>광고제휴문의</th>
+                    <td>자사의 홈페이지는 나라장터 뿐만 아닌 전국 23개의 조달 시스템의 입찰 공고를 회원사의 조건에 맞게 선별하여 정확히 추천드리는 서비스를 제공합니다. 이 서비스를 통하여 많은 중소기업의 계약 담당자 혹은 여러 입찰 관련인들의 사이트 유입이 예상됩니다. 저희의 사이트를 통하여 귀사의 제품, 서비스 혹은 조달 관련 분야의 광고 효과를 기대하시는 분들은 문의바랍니다.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="partner1">
+            <div class="button_partner">
+                <button class="partner" onclick="showPopup();">제휴 문의하기 </button>
+            </div>
+        </div>
       </div>
       <div class="column_enquiry1"></div>
      

@@ -433,8 +433,8 @@ div.column5{
 
 div.column6{
   float: left;
-  width: 150px;
-  height: 60px;
+  width: 30%;
+  height: 70px;
   border: 0px solid #CACACA;
   padding: 10px 15px 0px 10px;
   text-align: right;
@@ -442,8 +442,8 @@ div.column6{
 
 div.column7{
   float: left;
-  width: 660px;
-  height: 60px;
+  width: 70%;
+  height: 70px;
   border-top: 0px solid #CACACA;
   border-bottom: 0px solid #CACACA;
   padding: 18px 0px 0px 10px;
@@ -459,7 +459,7 @@ div.column8{
 
 div.column9{
   float: left;
-  width: 660px;
+  width: 600px;
   height: 400px;
 }
 
@@ -467,6 +467,7 @@ div.column9{
 div table {
   font-size: 10px;
 }
+
 
 /*문의 폼 디자인*/
 
@@ -490,7 +491,7 @@ div.column_enquiry2{
 div.enquiry {
   /* display: inline-block; */
   height: 100%;
-  width: 655px;
+  width: 600px;
   /*border: 1px solid #CACACA;*/
   background: #ffffff;
   border-top-left-radius: 0px;
@@ -500,7 +501,27 @@ div.enquiry {
 }
 
 div.enquiry_content{
-  padding: 15px 20px 15px 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 50px;
+  padding-right: 0px;
+}
+
+div.enquiry_content h2 {
+  font-size: 16px;
+  color: #2A2A2A;
+  line-height: 1.5em;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+div.enquiry_content h3 {
+  font-size: 18px;
+  color: #103E5C;
+  line-height: 1.5em;
+  vertical-align: middle;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 div.left_enquiry{
@@ -523,6 +544,7 @@ div.input_enquiry{
   padding: 5px 5px 5px 5px;
   box-sizing: border-box;
 }
+
 
 div.input_enquiry_1 {
   display: inline-block;
@@ -555,13 +577,19 @@ div.column_check2{
   height: 30px;
   /*border: 1px solid #CACACA;*/
 }
+div.column_check3{
+  float: left;
+  width: 14%;
+  height: 30px;
+  /*border: 1px solid #CACACA;*/
+}
 
 .check{
   display:block; 
   position:relative; 
   margin-bottom:12px; 
   padding-left:25px; 
-  font-size:15px; 
+  font-size:13px; 
   cursor:pointer; 
   user-select:none;
   -webkit-user-select:none; 
@@ -609,9 +637,10 @@ div.column_check2{
 }
 
 /* 참고사항 텍스트 에어리어 */
-div.input_enquiry{
+div.input_enquiry_textarea{
   width: 100%;
-  padding: 5px 5px 5px 5px;
+  height: 300px;
+  padding: 70px 0px 5px 0px;
   box-sizing: border-box;
 }
 
@@ -653,6 +682,7 @@ div.service h1 {
 div.service h2 {
   color: rgb(0, 0, 0);
   font-size: 16px;
+  line-height: 1.5em;
   text-decoration: none;
 }
 
@@ -689,4 +719,265 @@ div.service1_content h2 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   text-decoration: none;
+}
+
+div.service2 {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px 20px 0px;;
+  margin-bottom: 0px;
+}
+
+div.service2 h1 {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FAQ */
+#faq_list ul {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  vertical-align: middle;
+  list-style: none;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+}
+
+#faq_list ul li {
+  margin-top: 10px;
+  vertical-align: middle;
+  float: right;
+  margin-right: 30px;
+}
+
+#faq_list ul li a {
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+
+/*제휴문의*/
+div.partner {
+  width: 660px;
+  height: 400px;
+  padding-top: 0px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+/*제휴문의 테이블*/
+table.partner {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  font-size: 14px;
+}
+table.partner thead th {
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+table.partner tbody th {
+  width: 150px;
+  height: 40;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+
+table.partner td {
+  width: 400px;
+  height: 40px;;
+  padding: 10px;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+}
+
+/* 제휴 문의 팝업 버튼 */
+
+div.partner1 {
+  width: 650px;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 250px;
+}
+
+div.button_partner {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: none;
+  background: #ffffff;
+}
+
+button.partner{
+  width: 150px;
+  height: 100%;
+  border: 0px;
+  background: #8D2126;
+  outline: none;
+  /*float: right;*/
+  color: #ffffff;
+}
+
+/*제휴 문의 팝업창*/
+.partner_enquiry {
+  width:600px;
+  height:100%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.partner_enquiry h1 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.partner_enquiry h2 {
+  font-size: 12px;
+  color: #000000;
+  font-weight: bold;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/*제휴 문의 드롭다운 박스 입력란*/
+
+select.partner{
+  font-size: 14px;
+  height:100%;
+  width: 100%;
+  padding: 0px 15px;
+  border: 0px;
+  outline: none;
+  float: left;
+  -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+  -moz-appearance: none;    /* 화살표 없애기 for firefox*/
+  appearance: none;         /* 화살표 없애기 공통*/
+}
+
+select.partner::-ms-expand {
+  display: none;            /* 화살표 없애기 for IE10, 11*/
+}
+
+/*제휴 문의 팝업 텍스트 입력란*/
+
+div.input_enquiry_popup{
+  width: 100%;
+  height: 55px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+div.input_enquiry_popup_1 {
+  display: inline-block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #ededed;
+  background: #ffffff;
+}
+
+input.enquiry_popup{
+  font-size: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+/*제휴 문의 팝업 텍스트에어리어 입력란*/
+
+div.input_partner_textarea{
+  width: 100%;
+  height: 230px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+div.partner_textarea {
+  display: inline-block;
+  height: 200px;
+  width: 100%;
+  border: 1px solid #ededed;
+  background: #ffffff;
+}
+
+textarea.partner{
+  font-size: 12px;
+  resize: none;
+  width: 100%;
+  padding: 10px;
+  border: 0px;
+  outline: none;
+  float: left;
+}
+
+/*제휴 문의 팝업 개인정보 동의란*/
+div.partner_enquiry_agreement {
+  width:550px;
+  height:200px;
+  background-color: #F3F6F7;
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+}
+
+/*제휴 문의 전송 버튼*/
+div.partner_popup_button_1 {
+  width: 50%;
+  float: left;
+  height: 100px;
+  padding-top: 20px;
+}
+div.partner_popup_button_2 {
+  width: 50%;
+  display: inline-block;
+  height: 100px;
+  padding-top: 20px;
+}
+
+div.button_partner_enquiry {
+  display: inline-block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button.partner_enquiry1{
+  width: 60px;
+  height: 100%;
+  border: 0px;
+  background: #8D2126;
+  outline: none;
+  color: #ffffff;
+  float: right;
+}
+
+button.partner_enquiry2{
+  width: 60px;
+  height: 100%;
+  border: 0px;
+  background: #8D2126;
+  outline: none;
+  color: #ffffff;
+  float: left;
 }

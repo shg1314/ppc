@@ -58,5 +58,5 @@ app.get('/', (req, res) => {
 app.post('/mailerEnquiry', (req, res) => {
   console.log(req.body);
   res.json(req.body);
-});
+})
 
