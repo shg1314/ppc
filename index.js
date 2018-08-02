@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
+var bidContoller = require('./controllers/bid.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,9 +14,11 @@ router.get('/about', function(req, res, next) {
 });
 
 /*GET bid-list page.*/
-router.get('/bidList', function(req, res, next) {
-  res.render('bidList', { title: 'Prime Procurement' });
-});
+//router.get('/bidList', function(req, res, next) {
+ // res.render('bidList', { title: 'Prime Procurement' });
+//});
+router.get('/bidList'
+,bidContoller.list);
 
 /*GET analysis page.*/
 router.get('/analysis', function(req, res, next) {
