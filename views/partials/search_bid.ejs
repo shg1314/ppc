@@ -1,5 +1,5 @@
 <% include ../partials/stylesheet %>
-
+<form action="/bidList" method="get" id="searchbidform">
 <div class="search_bid">
     <div class="search_bid_content">
         <p>맞춤 공고 검색</p>
@@ -58,10 +58,11 @@
         <!--검색하기 버튼-->
         <div class="button_bidlist_content">
                 <div class="button_bidlist">
-                    <button class="bid_list">공고문 검색하기</button>
+                    <button class="bid_list"  type="submit" form="searchbidform" value="Submit">공고문 검색하기</button>
                 </div>
         </div>
     
     </div>
 
 </div>
+</form>

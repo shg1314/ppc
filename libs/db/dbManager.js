@@ -1,7 +1,7 @@
 'use strict'
 
 const mysql = require('MySQL');
-class Database {
+class DBManager {
     constructor(config) {
         this.connection = mysql.createConnection(config);
     }
@@ -23,6 +23,14 @@ class Database {
             });
         });
     }
-}
+};
+
+DBManager.execute = function(config, callback) {
+    const db = new DBManager(config);
+    return callback(db).then(
+        result =>  db.close().then(() => result),
+        err => db.close().then(() => { throw err; })
+    );
+};
 
 module.exports = DBManager;
