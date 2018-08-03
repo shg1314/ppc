@@ -18,10 +18,10 @@ BidService.prototype.getByName = function (name){
        );
     };
 
-    BidService.prototype.save = function(bit){
+    BidService.prototype.save = function(bid){
         let  sql = 'insert into '  + tbName +  '(num, name, ordCount, bidType, isInternational, insttNm, beginDt, clseDt, opengDt) values(?,?,?,?,?,?,?,?,?);';
         return Database.execute(config.maindb, db => db.query(sql,[
-            bit.num,bit.name,bit.ordCount, bit.bidType,bit.isInternational,bit.insttNm,bit.beginDt,bit.clseDt,bit.opengDt]
+            bid.num,bid.name,bid.ordCount, bid.bidType,bid.isInternational,bid.insttNm,bid.beginDt,bid.clseDt,bid.opengDt]
         ));
     };
 

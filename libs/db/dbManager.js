@@ -29,7 +29,7 @@ DBManager.execute = function(config, callback) {
     const db = new DBManager(config);
     return callback(db).then(
         result =>  db.close().then(() => result),
-        err => db.close().then(() => { throw err; })
+        err => { console.log('err execute'); return db.close().then(() => { throw err; })}
     );
 };
 
