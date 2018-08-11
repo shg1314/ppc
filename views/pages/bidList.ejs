@@ -32,20 +32,16 @@
             <th>공고문 제목</th>
             <th>입찰 마감일</th>
           </tr>
-          <tr>
-              <td>1</td>
-              <td>나라장터</td>
-              <td>성남시청</td>
-              <td><a href="/bidDetail" onclick="window.open(this.href,'bidDetail','width=1000, height=700, location=no, status=no, scrollbars=yes');return false;" onkeypress="this.onclick()">테스트 임의 내용 입니다.</a></td>
-              <td>2018년 7월 31일 14:00</td>
-          </tr>
-          <tr>
-              <td>2</td>
-              <td>나라장터</td>
-              <td>성남시청</td>
-              <td>테스트 임의 내용 입니다.</td>
-              <td>2018년 7월 31일 14:00</td>
-          </tr>
+          <% for (var i = 0; i < bidlist.length; i++) { 
+                var bid = bidlist[i]; %>
+                 <tr>
+                   <td><%= bid.num %></td>
+                    <td><%= bid.name %></td>
+                    <td><%= bid.insttNm %></td>
+                    <td><a href="/bidDetail" onclick="window.open(this.href,'bidDetail','width=1000, height=700, location=no, status=no, scrollbars=yes');return false;" onkeypress="this.onclick()"><%=bid.name %></a></td>
+                    <td><%= bid.clseDt %></td>
+                 </tr>
+            <% } %>
         </table>
         <div class="text-center">
             <ul class="pagination">

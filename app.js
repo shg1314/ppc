@@ -20,6 +20,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));  
+ //bodyParser
+ app.use(bodyParser.urlencoded({extended: false}));
+ app.use(bodyParser.json());
 
 app.use('/', indexRouter);
 //app.use('/users', usersRouter);
@@ -40,9 +43,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
- //bodyParser
- app.use(bodyParser.urlencoded({extended: false}));
- app.use(bodyParser.json())
+
 
 module.exports = app;
 
