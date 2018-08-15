@@ -14,18 +14,33 @@ function BidService(db){
 
 function hasWhereClause(obj){
     if(obj == null) return false
-    if(obj.num != null || obj.num != '') return true;
-    if(obj.name != null || obj.name != '') return true;
-    if(obj.ordCount != null || obj.ordCount != '') return true;
-    if(obj.bidType != null || obj.bidType != '') return true;
-    if(obj.insttNm != null || obj.insttNm != '') return true;
-    if(obj.beginDtFrom != null || obj.beginDtFrom != '') return true;
-    if(obj.beginDtTo != null || obj.beginDtTo != '') return true;
-    if(obj.clseDtFrom != null || obj.clseDtFrom != '') return true;
-    if(obj.clseDtTo != null || obj.clseDtTo != '') return true;
-    if(obj.opengDtFrom != null || obj.opengDtFrom != '') return true;
-    if(obj.opengDtTo != null || obj.opengDtTo != '') return true;
+    if(isNotEmpty(obj.num)) return true;
+    if(isNotEmpty(obj.name)) return true;
+    if(isNotEmpty(obj.ordCount)) return true;
+    if(isNotEmpty(obj.bidType)) return true;
+    if(isNotEmpty(obj.insttNm)) return true;
+    if(isNotEmpty(obj.beginDtFrom)) return true;
+    if(isNotEmpty(obj.beginDtTo)) return true;
+    if(isNotEmpty(obj.clseDtFrom)) return true;
+    if(isNotEmpty(obj.clseDtTo)) return true;
+    if(isNotEmpty(obj.opengDtFrom)) return true;
+    if(isNotEmpty(obj.opengDtTo)) return true;
     return false;
+}
+
+function isNotNullAndUndefined(obj){
+    if(null === obj) return false;
+    if(undefined === obj) return false;
+    if( typeof obj === 'undefined' ) return false;
+    if(obj === 'undefined') return false;
+    return true;
+}
+
+function isNotEmpty(val)
+{
+    if(isNotNullAndUndefined(val)==false) return false;
+    if(val === '') return false;
+    return true;
 }
 
 function getCloseDate(obj){
@@ -55,6 +70,7 @@ BidService.prototype.search = function(obj){
     else sql += ' ;';
 
     sql += getCloseDate(obj);
+  // add more 
 
     return Database.execute(dbconfig, db => db.query(sql,[]));
 }
