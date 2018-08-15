@@ -12,8 +12,7 @@ router.get('/', function(req, res, next) {
 //router.get('/bidList', function(req, res, next) {
  // res.render('bidList', { title: 'Prime Procurement' });
 //});
-router.get('/bidList'
-,bidContoller.search);
+router.get('/bidList',bidContoller.search);
 
 /*GET bid-detail page.*/
 router.get('/bidDetail', function(req, res, next) {
