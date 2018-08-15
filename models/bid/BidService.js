@@ -82,19 +82,23 @@ BidService.prototype.getByName = function (name){
        );
     };
 
-    BidService.prototype.save = function(bid){
+BidService.prototype.save = function(bid){
         const  sql = 'insert into '  + tbName +  '(num, name, ordCount, bidType, isInternational, insttNm, beginDt, clseDt, opengDt) values(?,?,?,?,?,?,?,?,?);';
         return Database.execute(config.maindb, db => db.query(sql,[
             bid.num,bid.name,bid.ordCount, bid.bidType,bid.isInternational,bid.insttNm,bid.beginDt,bid.clseDt,bid.opengDt]
         ));
     };
 
-    BidService.prototype.deleteByName = function(name){
+BidService.prototype.deleteByName = function(name){
     const sql = 'delete from ' + tbName +  ' where name = ?';
     return Database.execute(config.maindb,function(db){
         return db.query(sql,[name]);
         }
     );
+};
+
+BidService.prototype.getDetail = function(num){
+
 };
 
 module.exports = BidService;

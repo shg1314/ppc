@@ -15,9 +15,10 @@ router.get('/', function(req, res, next) {
 router.get('/bidList',bidContoller.search);
 
 /*GET bid-detail page.*/
-router.get('/bidDetail', function(req, res, next) {
-  res.render('bidDetail', { title: 'Prime Procurement' });
-});
+router.get('/bidDetail',  bidContoller.bidDetail);
+  //res.render('bidDetail', { title: 'Prime Procurement' });
+ 
+
 
 /*GET analysis page.*/
 router.get('/analysis', function(req, res, next) {

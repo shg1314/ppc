@@ -28,3 +28,10 @@ exports.search = function (req,res){
         console.log(err);
     });
 }
+
+exports.bidDetail = function(req,res){
+    let bid = new BidService();
+    let num = {num : req.query.num};
+    
+
+}

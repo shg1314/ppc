@@ -38,7 +38,7 @@
                    <td><%= bid.num %></td>
                     <td><%= bid.name %></td>
                     <td><%= bid.insttNm %></td>
-                    <td><a href="/bidDetail" onclick="window.open(this.href,'bidDetail','width=1000, height=700, location=no, status=no, scrollbars=yes');return false;" onkeypress="this.onclick()"><%=bid.name %></a></td>
+                    <td><a href="/bidDetail?num=<%= bid.num%>'" onclick="window.open(this.href, '_blank','width=1000, height=700, location=no, status=no, scrollbars=yes');return false;" onkeypress="this.onclick()"><%=bid.name %></a></td>
                     <td><%= bid.clseDt %></td>
                  </tr>
             <% } %>
