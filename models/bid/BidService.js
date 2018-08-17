@@ -36,6 +36,11 @@ function isNotNullAndUndefined(obj){
     return true;
 }
 
+function isNullOrUndefined(obj)
+{
+    return !isNotNullAndUndefined(obj);
+}
+
 function isNotEmpty(val)
 {
     if(isNotNullAndUndefined(val)==false) return false;
@@ -64,8 +69,11 @@ BidService.prototype.get = function(){
     return Database.execute(dbconfig, db => db.query(sql,[]));
 }
 
-BidService.prototype.search = function(obj){
-    let sql = 'select ' + colName +  ' from ' + tbName;
+BidService.prototype.search = function(obj, maxCount, ){
+    let sql = '';
+    if(isNullOrUndefined(maxCount))
+        sql = 'select ' + colName +  ' from ' + tbName;
+    else sql = ' top ' + maxCount  + ' select ' + colName +  ' from ' + tbName;
     if(hasWhereClause(obj)) sql+= ' where ';
     else sql += ' ;';
 
